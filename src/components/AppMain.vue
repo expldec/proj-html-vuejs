@@ -133,7 +133,32 @@
         </div>
       </div>
     </section>
-    <section class="our-work"></section>
+    <!-- OUR WORK -->
+    <section class="our-work">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <h3>Our Work</h3>
+            <p class="text-muted pb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem atque aliquam est eos expedita beatae.
+            </p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div
+            v-for="(item, index) in caseStudyImgURLs"
+            :key="index"
+            class="col-4"
+          >
+            <img :src="require(`../assets/images/${item}`)" alt="" />
+          </div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+        <a href="#" class="btn btn-primary link-light my-4">View Our Work</a>
+      </div>
+    </section>
     <section class="pricing"></section>
     <section class="news"></section>
     <section class="testimonials"></section>
@@ -144,6 +169,18 @@
 <script>
 export default {
   name: "AppMain",
+  data() {
+    return {
+      caseStudyImgURLs: [
+        "case-study-gallery-3-1.jpg",
+        "case-study-gallery-2.jpg",
+        "case-study-gallery-1-1.jpg",
+        "case-study-gallery-4-1.jpg",
+        "case-study-gallery-5-1.jpg",
+        "case-study-gallery-6-1.jpg",
+      ],
+    };
+  },
 };
 </script>
 
@@ -197,5 +234,9 @@ a {
     font-size: 3rem;
     color: $primary;
   }
+}
+.our-work {
+  background-color: $background-light;
+  padding-top: 4rem;
 }
 </style>
