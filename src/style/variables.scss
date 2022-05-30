@@ -1,4 +1,19 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+
+$btn-padding-y-sm: 0;
+$btn-padding-x-sm: 4px;
+
 $background-white: #ffffff;
 $background-light: #f8f8f8;
-$text-highcontrast-color: #202020;
+$text-dark: #202020;
 $text-lowcontrast-color: #5c5c5d;
+
+$primary:#ffa837;
+$secondary: #0369d7;
+$btn-border-radius: 1.5rem;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <AppHeader :headerMenuItems="headerMenuItems" />
     <AppMain />
     <AppFooter />
   </div>
@@ -18,6 +18,37 @@ export default {
     AppMain,
     AppFooter,
   },
+  data() {
+    return {
+      headerMenuItems: [
+        {
+          text: "Home",
+          link: "#",
+        },
+        {
+          text: "Who We Are",
+          link: "#",
+        },
+        {
+          text: "What We Do",
+          link: "#",
+        },
+        {
+          text: "Where We Work",
+          link: "#",
+        },
+        {
+          text: "Careers",
+          link: "#",
+          tag: "Apply",
+        },
+        {
+          text: "News",
+          link: "#",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -28,6 +59,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 </style>
