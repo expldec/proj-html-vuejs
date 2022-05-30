@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-body {
-    font-family: "Montserrat", Helvetica, sans-serif;
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
 }

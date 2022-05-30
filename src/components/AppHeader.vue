@@ -5,14 +5,26 @@
         <div class="header__left">
           <img
             id="header-logo"
-            src="../assets/images/logo_seo_2x.png"
+            src="../assets/images/logo_seo_w_2x.png"
             alt="Avada SEO"
           />
         </div>
         <div class="header__right d-flex align-items-center">
           <ul>
-            <li v-for="(item, index) in headerMenuItems" :key="index">
-              <a :href="item.link" class="link-dark">{{ item.text }}</a>
+            <li
+              v-for="(item, index) in navMenuItems"
+              :key="index"
+              class="ms-3 ms-xl-4"
+            >
+              <a
+                :href="item.link"
+                :class="{
+                  'link-primary': item.isActive,
+                  'link-light': !item.isActive,
+                  'btn text-white btn-primary': item.isButton,
+                }"
+                >{{ item.text }}</a
+              >
               <span
                 v-if="item.tag"
                 class="ms-tag btn btn-sm btn-outline-primary"
@@ -20,7 +32,6 @@
               >
             </li>
           </ul>
-          <a href="#" class="btn text-white btn-primary">Get in touch now</a>
         </div>
       </div>
     </div>
@@ -30,13 +41,21 @@
 <script>
 export default {
   name: "AppHeader",
-  props: { headerMenuItems: Array },
+  props: { navMenuItems: Array },
 };
 </script>
 
 <style lang="scss" scoped>
+header {
+  position: absolute;
+  width: 100%;
+}
 .header {
   height: 3rem;
+  &__left {
+    min-width: 180px;
+    flex-basis: 180px;
+  }
 }
 #header-logo {
   height: 100%;
@@ -47,7 +66,6 @@ ul {
   li {
     display: inline-flex;
     align-items: center;
-    margin-right: 1rem;
     font-size: 0.9rem;
     a {
       text-decoration: none;
