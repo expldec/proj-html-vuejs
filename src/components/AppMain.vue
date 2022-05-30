@@ -69,7 +69,70 @@
         />
       </div>
     </section>
-    <section class="services"></section>
+    <!-- SERVICES -->
+    <section class="services text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 text-center">
+            <h3>See Our Top Notch Services</h3>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem atque aliquam est eos expedita beatae.
+            </p>
+          </div>
+        </div>
+        <div class="row gx-3 text-center">
+          <div class="col-3">
+            <div class="bg-blue p-5">
+              <i class="fab fa-google"></i>
+              <h4>Google SEO</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                eius, dicta voluptatum dolore sed pariatur! Expedita facilis
+                assumenda natus fugit!
+              </p>
+              <a href="#">Read more ></a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="bg-blue p-5">
+              <i class="fas fa-cog"></i>
+              <h4>Brand Strategy</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                eius, dicta voluptatum dolore sed pariatur! Expedita facilis
+                assumenda natus fugit!
+              </p>
+              <a href="#">Read more ></a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="bg-blue p-5">
+              <i class="fas fa-building"></i>
+              <h4>Local SEO</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                eius, dicta voluptatum dolore sed pariatur! Expedita facilis
+                assumenda natus fugit!
+              </p>
+              <a href="#">Read more ></a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="bg-blue p-5">
+              <i class="fas fa-chart-bar"></i>
+              <h4>SEO Analysis</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                eius, dicta voluptatum dolore sed pariatur! Expedita facilis
+                assumenda natus fugit!
+              </p>
+              <a href="#">Read more ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="our-work"></section>
     <section class="pricing"></section>
     <section class="news"></section>
@@ -99,9 +162,17 @@ h3 {
   font-weight: 700;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-blue {
+  background-color: $blue;
 }
 .jumbo {
   background-image: url("../assets/images/1-hero-image.png");
@@ -112,6 +183,16 @@ h4 {
 .template-promo {
   background-color: $background-light;
   padding-top: 4rem;
+  i {
+    font-size: 3rem;
+    color: $primary;
+  }
+}
+.services {
+  background-color: $background-darkblue;
+  background-image: url("../assets/images/pattern_background.png");
+  background-size: contain;
+  padding: 4rem 0 6rem;
   i {
     font-size: 3rem;
     color: $primary;
