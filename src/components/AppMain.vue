@@ -292,6 +292,7 @@
         <a href="#" class="btn btn-primary link-light my-4">Go to News</a>
       </div>
     </section>
+    <!-- TESTIMONIALS -->
     <section class="testimonials">
       <div class="container text-center">
         <div class="row justify-content-center">
@@ -337,7 +338,21 @@
         </div>
       </div>
     </section>
-    <section class="cta"></section>
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <h3 class="text-white pb-2">Start Your Free Consultation</h3>
+            <p class="text-white pb-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem atque aliquam est eos expedita beatae.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary link-light">Contact Us Now</a>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -486,5 +501,13 @@ a {
   .partner-img {
     max-width: 100px;
   }
+}
+.cta {
+  position: relative;
+  background-image: url("../assets/images/CTA-seo-1.jpg");
+  background-color: rgba(black, 0.7);
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 6rem 0;
 }
 </style>
