@@ -2,7 +2,7 @@
   <div id="app">
     <AppHeader :navMenuItems="navMenuItems" />
     <AppMain />
-    <AppFooter />
+    <AppFooter :navMenuItems="navMenuItems" />
   </div>
 </template>
 
